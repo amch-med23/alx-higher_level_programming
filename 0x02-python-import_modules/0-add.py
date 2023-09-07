@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-__import__("add_0.py")
-print(add(1, 2))
+from add_0 import add
+a = 1
+b = 2
+print(f"1 + 2 = {add(a, b)}")
