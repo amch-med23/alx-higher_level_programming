@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
     n_list = []
-    for x in range(0, list_lenght):
+    for x in range(0, list_length):
         try:
             op = my_list_1[x] / my_list_2[x]
         except TypeError:
