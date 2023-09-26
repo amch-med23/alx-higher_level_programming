@@ -52,6 +52,7 @@ class SinglyLinkedList:
             printsll += str(location.data) + "\n"
             location = location.next_node
         return printsll[:-1]
+
     def sorted_insert(self, value):
         """insert in a sorted fashion
         Args:
