@@ -18,6 +18,7 @@ class Square:
             raise TypeError('size must be an integer')
         if size < 0:
             raise ValueError('size must be >= 0')
+
         self.__size = size
 
     @property
@@ -40,6 +41,7 @@ class Square:
         Calculates the area of the defined square
         Return: the area of the square
         """
+
         return (self.__size ** 2)
 
     def my_print(self):
@@ -48,5 +50,6 @@ class Square:
         """
         if self.__size == 0:
             print()
-        if x in range(self.__size):
+
+        for x in range(self.__size):
             print("#" * self.__size)
