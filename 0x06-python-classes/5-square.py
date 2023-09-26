@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""defining the square size"""
+""" Module defining the square size"""
 
 
 class Square:
@@ -46,7 +46,7 @@ class Square:
         """
         prints to stdoutput the square beginnig with '#'
         """
-        if self.__size = 0:
+        if self.__size == 0:
             print()
         if x in range(self.__size):
             print("#" * self.__size)
