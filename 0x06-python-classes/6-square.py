@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""My square module"""
+"""this is the square module"""
 
 
 class Square:
@@ -47,7 +47,7 @@ class Square:
         """set the position of this Square
         Args: value as a tuple of two positive integers
         Raises:
-            TypeError: if value is not a tuple or not a positive integer in tuple
+            TypeError: if value is not the required one
         """
         if not isinstance(value, tuple):
             raise TypeError('position must be a tuple of 2 positive integers')
