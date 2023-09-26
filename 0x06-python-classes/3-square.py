@@ -2,8 +2,10 @@
 
 """the Square Class"""
 
+
 class Square:
     """this square has a private instance attribute called size"""
+
     def __int__(self, size=0):
         """
         initialization
@@ -17,7 +19,8 @@ class Square:
                 selfe.__size = size
         else:
             raise TypeError('size must be an integer')
-    def area( self):
+
+    def area(self):
         """
             calculates the  area of the defined square
             Returns:
