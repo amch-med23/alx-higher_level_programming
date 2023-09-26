@@ -2,13 +2,15 @@
 """ the Square module """
 
 
-def __init__(self, value=0):
-    """
-    creating the square
-    Args:
+class Square:
+    """ definig the class """
+
+    def __init__(self, size=0):
+        """ creating the square
+        Args:
         size: the size of the square
-    """
-    self.__size = size
+        """
+        self.__size = size
 
     @property
     def size(self):
@@ -36,7 +38,7 @@ def __init__(self, value=0):
     def __lt__(self, other):
         return self.area() < other.area()
 
-    def __ge__(selfe, other):
+    def __ge__(self, other):
         return self.area() >= other.area()
 
     def __ne__(self, other):
