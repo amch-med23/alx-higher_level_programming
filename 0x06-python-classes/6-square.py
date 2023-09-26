@@ -38,7 +38,7 @@ class Square:
             raise ValueError('size must be >= 0')
         self.__size = value
 
-    @propetry
+    @property
     def position(self):
         return self.__position
 
@@ -52,7 +52,7 @@ class Square:
         """
         if not isinstance(value, tuple):
             raise TypeError('position must be a tuple of 2 positive integers')
-        if len(value != 2):
+        if len(value) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
         if len([x for x in value if isinstance(x, int) and x >= 0]) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
@@ -70,7 +70,7 @@ class Square:
         returns the position of the square in the spaces
         """
         p = ""
-        if self.__size = 0:
+        if self.__size == 0:
             return "\n"
         for j in range(self.position[1]):
             p += "\n"
