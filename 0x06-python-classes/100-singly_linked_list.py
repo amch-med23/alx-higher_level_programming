@@ -29,7 +29,7 @@ class Node:
         """
         return (self.__next_node)
 
-    @next_node.settr
+    @next_node.setter
     def next_node(self, value):
         """ Setting the value of the next node """
         if (value is not None and not isinstance(value, Node)):
