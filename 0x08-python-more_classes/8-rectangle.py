@@ -15,7 +15,7 @@ class Rectangle:
         Raises:
               TypeError: if the alue type of width and height is not integer
               ValueError: if the value is less than 0
-"""
+        """
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -55,7 +55,7 @@ class Rectangle:
     def perimeter(self):
         """ returns perimeter of a rectangle """
         if self.__width == 0 or self.__height == 0:
-            return 0
+            return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self) -> str:
@@ -89,7 +89,7 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_2.area() >= rect_1.area():
-            return rect_2
-        else:
+        if rect_1.area() >= rect_2.area():
             return rect_1
+        else:
+            return rect_2
