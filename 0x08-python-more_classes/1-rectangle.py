@@ -11,8 +11,8 @@ class Rectangle:
              width: represants the width of the rectangle
              height: represants the height of the rectangle
         Raises:
-              TypeError: if the alue type of width and height is not integer
-              ValueError: if the value is less than 0
+              TypeError: if size is not integer
+              ValueError: if size is less than 0
         """
         self.width = width
         self.height = height
@@ -32,7 +32,7 @@ class Rectangle:
         self.__width = value
 
     @property
-    def height(self, value):
+    def height(self):
         """ retreives the height attribute """
         return self.__height
 
