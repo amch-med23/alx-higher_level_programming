@@ -4,6 +4,7 @@
 
 class Rectangle:
     """ this defines the rectangle """
+
     def __init__(self, width=0, height=0):
         """initialization of the Rectangle class
         Args:
@@ -12,7 +13,7 @@ class Rectangle:
         Raises:
               TypeError: if the alue type of width and height is not integer
               ValueError: if the value is less than 0
-"""
+        """
         self.width = width
         self.height = height
 
