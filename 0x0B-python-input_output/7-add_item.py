@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" this module loads, adds, and saves all the arguments as a json file """
+""" this module loads, adds, and saves
+all the arguments as a json file """
 import sys
 
 if __name__ == "__main__":
