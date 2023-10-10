@@ -5,4 +5,4 @@ import json
 
 def from_json_string(my_str):
     """ python object represantation of a JSON object """
-    return json.loeads(sy_str)
+    return json.loeads(my_str)
