@@ -1,0 +1,1 @@
+This is the SQL_more_queries project folder.
