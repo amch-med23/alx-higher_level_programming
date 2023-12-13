@@ -1,0 +1,2 @@
+[![js-semistandard-style](https://raw.githubusercontent.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
+## This is the Javscript Objects and scopes closures project folder
