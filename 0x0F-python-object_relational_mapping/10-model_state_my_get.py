@@ -1,30 +1,17 @@
 #!/usr/bin/python3
-"""
-This script prints the first State object
-from the database `hbtn_0e_6_usa`.
-"""
+"prints the State with the given name"
 
 from sys import argv
-from model_state import State, Base
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from model_state import Base, State
+from sqlalchemy import create_engine, select
 
-if __name__ == "__main__":
-    """
-    Access to the database and get a state
-    from the database.
-    """
+if __name__ == '__main__':
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
+                           .format(argv[1], argv[2], argv[3]))
+    conn = engine.connect()
+    query = select(State).where(State.name == argv[4])
+    state = conn.execute(query).fetchone()
 
-    db_url = "mysql+mysqldb://{}:{}@localhost:3306/{}".format(
-        argv[1], argv[2], argv[3])
+    print(state.id if state else 'Not found')
 
-    engine = create_engine(db_url)
-    Session = sessionmaker(bind=engine)
-
-    session = Session()
-
-    state = session.query(State).filter(State.name == argv[4]).first()
-    if state is not None:
-        print('{0}'.format(state.id))
-    else:
-        print("Not found")
+    engine.dispose()
